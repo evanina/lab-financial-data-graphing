@@ -1,2 +1,26 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+<!-- date picker -->
+<form id="query-form">
+  <label for="start-date">From:</label>
+  <input id="start-date" type="date">
+
+  <label for="end-date">To:</label>
+  <input id="end-date" type="date">
+
+  <!-- currency selector -->
+  <label for="currency">Currency:</label>
+  <select id="currency">
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+  </select>
+</form>
+
+<h2>Values</h2>
+<h3>Max: <span id="max-value"></span></h3>
+<h3>Min: <span id="min-value"></span></h3>
+
+<!-- chart -->
+<canvas id="myChart" width="400" height="400"></canvas>
+
+
